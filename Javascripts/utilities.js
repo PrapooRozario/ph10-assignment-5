@@ -14,7 +14,7 @@ function addHistory(donateAmount, donateTitle) {
   div.className = "border border-1 border-gray-200 rounded-xl p-8 mb-8";
   div.innerHTML = `
      <h1 class="text-black font-bold text-xl mb-5">
-            <span>${donateAmount} Taka is Donated for</span>
+            <span>${donateAmount} Taka is </span>
             <span>${donateTitle}</span>
             
           </h1>
