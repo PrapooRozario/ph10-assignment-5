@@ -1,0 +1,24 @@
+const donateSection = document.getElementById("Donate-section");
+const donateTab = document.getElementById("Donate-tab");
+const historySection = document.getElementById("History-section");
+const historyTab = document.getElementById("History-tab");
+
+historyTab.addEventListener("click", function () {
+  historyTab.classList.remove("text-grey");
+  historyTab.classList.add("bg-primary", "text-black");
+  historySection.classList.remove("hidden");
+
+  donateTab.classList.remove("bg-primary");
+  donateTab.classList.add("text-grey");
+  donateSection.classList.add("hidden");
+});
+
+donateTab.addEventListener("click", function () {
+  donateTab.classList.remove("text-grey");
+  donateTab.classList.add("bg-primary", "text-black");
+
+  historyTab.classList.remove("bg-primary");
+  historyTab.classList.add("text-grey");
+  historySection.classList.add("hidden");
+  donateSection.classList.remove("hidden");
+});
