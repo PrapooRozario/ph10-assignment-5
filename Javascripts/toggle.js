@@ -5,19 +5,19 @@ const historyTab = document.getElementById("History-tab");
 
 historyTab.addEventListener("click", function () {
   historyTab.classList.remove("text-grey");
-  historyTab.classList.add("bg-primary", "text-black");
+  historyTab.classList.add("bg-primary", "text-black", "border-0");
   historySection.classList.remove("hidden");
 
-  donateTab.classList.remove("bg-primary");
+  donateTab.classList.remove("bg-primary", "border-0");
   donateTab.classList.add("text-grey");
   donateSection.classList.add("hidden");
 });
 
 donateTab.addEventListener("click", function () {
   donateTab.classList.remove("text-grey");
-  donateTab.classList.add("bg-primary", "text-black");
+  donateTab.classList.add("bg-primary", "text-black", "border-0");
 
-  historyTab.classList.remove("bg-primary");
+  historyTab.classList.remove("bg-primary", "border-0");
   historyTab.classList.add("text-grey");
   historySection.classList.add("hidden");
   donateSection.classList.remove("hidden");
